@@ -8,7 +8,7 @@
 A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component. **Works on iOS & Android.**
 
 ## Example
-![react-native-simple-animations](https://i.imgur.com/oBZtsvk.gif "react-native-simple-animations")
+![react-native-simple-animations](https://i.imgur.com/IuiG6Sg.gif "react-native-simple-animations")
 
 ## Installation
 `npm install react-native-simple-animations --save`
@@ -61,7 +61,15 @@ You can configure `SimpleAnimation` by passing the following props:
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `SimpleAnimation` component in use.  The demo application was built using [Expo](https://expo.io/features).
 
-To use the demo application download this repository, install Expo using the installation instructions located [here](https://docs.expo.io/versions/v28.0.0/introduction/installation), run the application using the [Expo XDE](https://expo.io/tools).  Then open the application on the iOS Simulator, Gennymotion Android Simulator, or your mobile device.
+To use the demo application install Expo using the installation instructions located [here](https://docs.expo.io/versions/v28.0.0/introduction/installation), clone this repository, run the application using the [Expo XDE](https://expo.io/tools).  Then open the application on the iOS Simulator, [Gennymotion Android Emulator](https://www.genymotion.com/), or your mobile device.
+
+1) Install [Expo XDE](https://docs.expo.io/versions/v28.0.0/introduction/installation)
+2) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
+3) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
+4) Install demo application dependencies: `npm i`
+5) Open `react-native-simple-animations-example-app` in **Expo XDE**
+
+Using Expo XDE, you'll be able to view the demo application in the iOS Simulator or Gennymotion Android Android Emulator, or on your mobile device using the [iOS Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779) or [Android Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US).
 
 ## Built With
 * [React Native](https://facebook.github.io/react-native/) - A framework for building native apps using React
@@ -83,45 +91,3 @@ This project is licensed under the MIT License - see the [MIT Open Source Initia
 
 ## Acknowledgments
 Hat tip to anyone who's code was used! 🤠
-
-<!-- ## Usage
-Import **AnimatedBackgroundColorView** component
-
-```
-import { AnimatedBackgroundColorView } from 'react-native-animated-background-color-view';
-```
-
-Use as follows:
-
-```
-<AnimatedBackgroundColorView color='#00aced' />
-```
-Each time the `color` prop value changes the `backgroundColor` will use the [React Native timing animation](https://facebook.github.io/react-native/docs/animated.html#timing) to animate from the previous value to the current value.
-
-### Animate On Component Mount
-You can also specifiy an initial color for the background color to animate from when the component mounts:
-```
-<AnimatedBackgroundColorView
-    color='#00aced'
-    initialColor='red'
-/>
-```
-On mount the component `backgroundColor` will be `blue` and then animate to `#00aced`.
-
-### Using the `children` Prop
-The `AnimatedBackgroundColorView` component works just like the standard React Native `View` component.  `AnimatedBackgroundColorView` is designed to be nested inside other `View` components or other `AnimatedBackgroundColorView` components and can have 0 to many children of any type.
-
-```
-class AnimatedBackgroundColorViewWithText extends Component {
-    render = () => {
-        return (
-            <AnimatedBackgroundColorView
-                color='#00aced'
-                initialColor='red'
-            >
-                <Text>Hello, world!</Text>
-            </AnimatedBackgroundColorView>
-        );
-    }
-}
-``` -->
