@@ -1,12 +1,10 @@
+import { DIRECTIONS, MOVEMENT_TYPES, SimpleAnimation } from 'react-native-simple-animations';
 import { Modal, Picker, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
 import React, { Component } from 'react';
 import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 import Color from 'color';
-import { DIRECTIONS } from '../constants/directions';
-import { MOVEMENT_TYPES } from '../constants/movement-types';
 import PropTypes from 'prop-types';
-import { SimpleAnimation } from './simple-animation';
 
 const styles = StyleSheet.create({
     overlay: {

@@ -1,17 +1,13 @@
+import { AIMS, DIRECTIONS, MOVEMENT_TYPES, STATIC_TYPES, SimpleAnimation } from 'react-native-simple-animations';
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { AIMS } from '../constants/aims';
 import { Constants } from 'expo';
 import { Credits } from './credits';
-import { DIRECTIONS } from '../constants/directions';
 import { Heading } from './heading';
-import { MOVEMENT_TYPES } from '../constants/movement-types';
 import { PickerOverlay } from './picker-overlay';
 import { RadioSelector } from './radio-selector';
-import { STATIC_TYPES } from '../constants/static-types';
 import { Selector } from './selector';
-import { SimpleAnimation } from './simple-animation';
 import { SliderSelector } from './slider-selector';
 import { Variables } from '../config/variables';
 
