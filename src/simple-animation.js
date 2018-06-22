@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { getSpringAnimation, getTimingAnimation } from '../util/get-animation';
+import { getSpringAnimation, getTimingAnimation } from './util/get-animation';
 
-import { AIMS } from '../constants/aims';
+import { AIMS } from './constants/aims';
 import { Animated } from 'react-native';
-import { DEFAULT_PROPS } from '../constants/default-props';
-import { DIRECTIONS } from '../constants/directions';
-import { MOVEMENT_TYPES } from '../constants/movement-types';
-import { PROP_TYPES } from '../constants/prop-types';
-import { STATIC_TYPES } from '../constants/static-types';
+import { DEFAULT_PROPS } from './constants/default-props';
+import { DIRECTIONS } from './constants/directions';
+import { MOVEMENT_TYPES } from './constants/movement-types';
+import { PROP_TYPES } from './constants/prop-types';
+import { STATIC_TYPES } from './constants/static-types';
 
 export class SimpleAnimation extends Component {
 

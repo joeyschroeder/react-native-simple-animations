@@ -1,7 +1,7 @@
 {
   "name": "react-native-simple-animations",
   "version": "0.1.0",
-  "description": "A collection of simple entrance, exit, and attention-seeking animations for React Native.",
+  "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
   "author": "Joey Schroeder <schrjos@gmail.com> (joeyschroeder.com)",
   "homepage": "https://github.com/joeyschroeder/react-native-simple-animations",
@@ -16,7 +16,7 @@
     "url": "https://github.com/joeyschroeder/react-native-simple-animations.git"
   },
   "dependencies": {
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
