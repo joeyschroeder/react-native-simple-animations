@@ -37,26 +37,23 @@ In the above example the `Text` component will fade and zoom in for 1000 millise
 ## Configuration
 You can configure `SimpleAnimation` by passing the following props:
 
-##### Standard Props
-* **aim** (`"in"` | `"out"`, default: `"in"`): whether the child component will animate **in** or **out**; for example, if `staticType` is set to `"zoom"` and `aim` is set to `"in"` the child component will zoom in; if `aim` is set to `"out"` the child component will zoom out
-* **animate** (boolean, default: `true`): when `true` the child component will animate, when `false` the child component will not animate
-* **animateOnUpdate** (boolean, default: `true`): when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change
-* **style** (React Native [ViewPropTypes.style](https://facebook.github.io/react-native/docs/style.html)): additional styles applied to the component
-* **[useNativeDriver](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html)** (boolean, default: `true`): when `true` the animation is sent to native before starting, allowing native code to perform the animation on the UI thread without having to go through the bridge on every frame
-
-##### Animation Types
-* **fade** (boolean, default: `true`): when `true` the child component will fade in or out depending on the `aim`
-* **movementType** (`"slide"` | `"spring"`, default: `null`): when `direction` and `distance` are set, the type of movement animation
-* **staticType** (`"bounce"` | `"zoom"`, default: `null`): when set the child component will `"bounce"` or "`zoom`" in our out depending on the `aim`
-
-##### Animation Properties
-* **delay** (number, default: `0`): the length in milliseconds the component will wait before animating
-* **direction** (`"down"` | `"left"` | `"right"` | `"up"`, default: `null`): when `movementType` is set, this is the direction the child component will move
-* **distance** (number, default: `0`): when `movementType` is set, this is the distance the child component will move
-* **duration** (number, default: `1000`): the length in milliseconds the `fade` animation will last and the length the movement animation will last when `movementType` is set to `"slide"`
-* **easing** (React Native [Easing function](https://facebook.github.io/react-native/docs/easing.html), default: `Easing.out(Easing.exp)`): the easing function to define animation curve
-* **[friction](https://facebook.github.io/react-native/docs/animated.html#spring)** (number, default: `5`): when `movementType` is set to `"spring"` or `staticType` is set to `"bounce"` this is the amount of friction applied to the animation
-* **[tension](https://facebook.github.io/react-native/docs/animated.html#spring)** (number, default: `100`): when `movementType` is set to `"spring"` or `staticType` is set to `"bounce"` this is the amount of friction applied to the animation
+| prop | type/valid values | default | description |
+| - | - | - | - |
+| aim | `"in"`, `"out"` | `"in"` | whether the child component will animate **in** or **out**; for example, if `staticType` is set to `"zoom"` and `aim` is set to `"in"` the child component will zoom in; if `aim` is set to `"out"` the child component will zoom out |
+| animate | boolean | `true` | when `true` the child component will animate, when `false` the child component will not animate |
+| animateOnUpdate | boolean | `true` | when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change |
+| delay | number | `0` | the length in milliseconds the component will wait before animating |
+| direction | `"down"`, `"left"`, `"right"`, `"up"` | `null` | when `movementType` is set, this is the direction the child component will move |
+| distance | number | `0` | when `movementType` is set, this is the distance the child component will move |
+| duration | number | `1000` | the length in milliseconds the `fade` animation will last and the length the movement animation will last when `movementType` is set to `"slide"` |
+| easing | React Native [Easing function](https://facebook.github.io/react-native/docs/easing.html) | `Easing.out(Easing.exp)` | the easing function to define animation curve |
+| fade | boolean | `true` | when `true` the child component will fade in or out depending on the `aim` |
+| [friction](https://facebook.github.io/react-native/docs/animated.html#spring) | number | `5` | when `movementType` is set to `"spring"` or `staticType` is set to `"bounce"` this is the amount of friction applied to the animation |
+| movementType | `"slide"`, `"spring"` | `null` | when `direction` and `distance` are set, the type of movement animation |
+| staticType | `"bounce"`, `"zoom"` | `null`| when set the child component will `"bounce"` or "`zoom`" in our out depending on the `aim` |
+| style | React Native [ViewPropTypes.style](https://facebook.github.io/react-native/docs/style.html) | `null` | additional styles applied to the component |
+| [tension](https://facebook.github.io/react-native/docs/animated.html#spring) | number | `100` | when `movementType` is set to `"spring"` or `staticType` is set to `"bounce"` this is the amount of friction applied to the animation |
+| [useNativeDriver](http://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html) |  boolean | `true` | when `true` the animation is sent to native before starting, allowing native code to perform the animation on the UI thread without having to go through the bridge on every frame |
 
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `SimpleAnimation` component in use.  The demo application was built using [Expo](https://expo.io/features).
