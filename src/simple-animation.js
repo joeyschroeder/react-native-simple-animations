@@ -23,16 +23,16 @@ export class SimpleAnimation extends Component {
 
     static propTypes = PROP_TYPES
 
-    componentDidMount = () => {
+    componentDidMount() {
         this.animate();
     }
 
-    componentDidUpdate = () => {
+    componentDidUpdate() {
         const { animateOnUpdate } = this.props;
         if (animateOnUpdate) this.animate();
     }
 
-    animate = () => {
+    animate() {
         const { aim, animate, fade, movementType, staticType } = this.props;
 
         if (!animate) return;
@@ -59,7 +59,7 @@ export class SimpleAnimation extends Component {
         }
     }
 
-    getDistanceStartValue = () => {
+    getDistanceStartValue() {
         const { direction, distance } = this.props;
 
         switch (direction) {
@@ -72,17 +72,17 @@ export class SimpleAnimation extends Component {
         }
     }
 
-    getOpacity = () => {
+    getOpacity() {
         const { fade } = this.props;
 
         if (!fade) return {};
         return { opacity: this.opacityAnimation };
     }
 
-    getMovementTransform = () => {
-        const { direction } = this.props;
+    getMovementTransform() {
+        const { direction, movementType } = this.props;
 
-        if (!direction) return [];
+        if (!direction || !movementType) return [];
 
         const outputRangeStartValue = this.getDistanceStartValue();
 
@@ -100,14 +100,14 @@ export class SimpleAnimation extends Component {
         return transform;
     }
 
-    getStaticTransform = () => {
+    getStaticTransform() {
         const { staticType } = this.props;
 
         if (!staticType) return [];
         return [{ scale: this.staticAnimation }];
     }
 
-    getTransform = () => {
+    getTransform() {
         const movementTransform = this.getMovementTransform();
         const staticTransform = this.getStaticTransform();
 
@@ -116,7 +116,7 @@ export class SimpleAnimation extends Component {
         return { transform };
     }
 
-    render = () => {
+    render() {
         const { children, style } = this.props;
 
         const viewStyles = [ style, this.getTransform(), this.getOpacity() ];
