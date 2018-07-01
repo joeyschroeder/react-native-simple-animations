@@ -3,14 +3,36 @@
   "version": "0.1.1",
   "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
-  "author": "Joey Schroeder <schrjos@gmail.com> (joeyschroeder.com)",
+  "scripts": {
+    "coverage": "jest --coverage",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Joey Schroeder",
+    "email": "schrjos@gmail.com"
+  },
   "homepage": "https://github.com/joeyschroeder/react-native-simple-animations",
   "keywords": [
+    "android",
+    "animation",
     "animations",
+    "bounce",
+    "fade",
+    "ios",
+    "mobile",
     "react",
-    "react-native"
+    "react-component",
+    "react-native",
+    "react-native-component",
+    "slide",
+    "transform",
+    "transition",
+    "ui"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joeyschroeder/react-native-simple-animations/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/joeyschroeder/react-native-simple-animations.git"
@@ -21,12 +43,35 @@
   "devDependencies": {
     "babel-eslint": "^8.2.5",
     "babel-preset-react-native": "^4.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-react-native": "^3.2.1"
+    "eslint-plugin-react-native": "^3.2.1",
+    "jest": "^23.2.0",
+    "jest-react-native": "^18.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-native": "^0.55.4",
+    "react-test-renderer": "^16.4.1"
   },
-  "peerDependencies": {
-    "react": ">= 15 || ~16.0.0-0",
-    "react-native": ">=0.39"
+  "jest": {
+    "collectCoverageFrom": [ "src/**/*.js" ],
+    "coverageReporters": [ "lcov", "text" ],
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/"
+    ],
+    "setupFiles": [
+      "./test-setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/example/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   }
 }

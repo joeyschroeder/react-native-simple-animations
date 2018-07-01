@@ -119,6 +119,8 @@ export class SimpleAnimation extends Component {
     render() {
         const { children, style } = this.props;
 
+        if (!children) return null;
+
         const viewStyles = [ style, this.getTransform(), this.getOpacity() ];
 
         return (
