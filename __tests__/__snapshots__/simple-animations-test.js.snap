@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<SimpleAnimation /> should render SimpleAnimation with children when props.children exists 1`] = `
+<View
+  style={
+    Object {
+      "opacity": 0,
+      "transform": Array [],
+    }
+  }
+>
+  test
+</View>
+`;
+
 exports[`<SimpleAnimation /> should render null when props.children does not exist 1`] = `null`;

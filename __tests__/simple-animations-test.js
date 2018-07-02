@@ -83,9 +83,8 @@ describe('<SimpleAnimation />', () => {
         expect(component).toMatchSnapshot();
     });
 
-    // it('should render null when props.children does not exist', () => {
-    //     const component = create(<SimpleAnimation>test</SimpleAnimation>).toJSON();
-    //     console.log('component: ', component);
-    //     // expect(component).toMatchSnapshot();
-    // });
+    it('should render SimpleAnimation with children when props.children exists', () => {
+        const component = create(<SimpleAnimation>test</SimpleAnimation>).toJSON();
+        expect(component).toMatchSnapshot();
+    });
 });
