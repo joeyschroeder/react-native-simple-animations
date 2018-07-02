@@ -1,8 +1,7 @@
 [![npm](https://img.shields.io/npm/v/react-native-simple-animations.svg)](https://www.npmjs.com/package/react-native-simple-animations)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-simple-animations.svg)](https://github.com/joeyschroeder/react-native-simple-animations/issues)
-[![GitHub forks](https://img.shields.io/github/forks/joeyschroeder/react-native-simple-animations.svg)](https://github.com/joeyschroeder/react-native-simple-animations/network)
-[![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-simple-animations.svg)](https://github.com/joeyschroeder/react-native-simple-animations/stargazers)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-simple-animations.svg)](https://www.npmjs.com/package/react-native-simple-animations)
 
 # [![react-native-simple-animations](https://i.imgur.com/Aw0bShe.png)](https://www.npmjs.com/package/react-native-simple-animations) React Native Simple Animations
 A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component. **Works on iOS & Android.**
