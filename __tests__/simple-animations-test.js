@@ -34,6 +34,13 @@ describe('<SimpleAnimation />', () => {
         expect(animate).toHaveBeenCalled();
     });
 
+    it('should return 0 when this.getDistanceStartValue() is called and props.direction and props.distance to not exist', () => {
+        const component = shallow(<SimpleAnimation />);
+        const result = component.instance().getDistanceStartValue();
+
+        expect(result).toEqual(0);
+    });
+
     it('should return undefined when this.animate() is called and props.animate !== true', () => {
         const component = shallow(<SimpleAnimation animate={false} />);
         expect(component.instance().animate()).toEqual(undefined);
