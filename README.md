@@ -22,16 +22,11 @@ import { SimpleAnimation } from 'react-native-simple-animations';
 Use as follows:
 
 ```
-<SimpleAnimation
-    delay={500}
-    duration={1000}
-    fade
-    staticType='zoom'
->
+<SimpleAnimation delay={500} duration={1000} fade staticType='zoom'>
 	<Text>Hello, world!</Text>
 </SimpleAnimation>
 ```
-In the above example the `Text` component will fade and zoom in for 1000 milliseconds are waiting 500 milliseconds.
+In the above example the `Text` component will fade and zoom in for 1000 milliseconds after waiting 500 milliseconds.
 
 ## Configuration
 You can configure `SimpleAnimation` by passing the following props:
