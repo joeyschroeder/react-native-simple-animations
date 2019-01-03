@@ -4,8 +4,8 @@
   "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
   "scripts": {
-    "coverage": "jest --coverage",
-    "test": "jest"
+    "test": "./node_modules/.bin/jest --config ./jest.config.json",
+    "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
   "author": {
     "name": "Joey Schroeder",
@@ -55,28 +55,5 @@
     "react-dom": "^16.7.0",
     "react-native": "^0.57.8",
     "react-test-renderer": "^16.7.0"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ],
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/"
-    ],
-    "setupFiles": [
-      "./test-setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/example/",
-      "<rootDir>/node_modules/"
-    ],
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    }
   }
 }
