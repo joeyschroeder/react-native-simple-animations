@@ -1,4 +1,4 @@
 export const MOVEMENT_TYPES = {
-    SLIDE: 'slide',
-    SPRING: 'spring'
+  SLIDE: 'slide',
+  SPRING: 'spring'
 };

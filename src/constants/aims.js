@@ -1,4 +1,4 @@
 export const AIMS = {
-    IN: 'in',
-    OUT: 'out'
+  IN: 'in',
+  OUT: 'out'
 };
