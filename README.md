@@ -2,6 +2,10 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-simple-animations.svg)](https://github.com/joeyschroeder/react-native-simple-animations/issues)
 [![npm downloads](https://img.shields.io/npm/dt/react-native-simple-animations.svg)](https://www.npmjs.com/package/react-native-simple-animations)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Dependency status](https://david-dm.org/joeyschroeder/react-native-simple-animations/status.svg)](https://david-dm.org/joeyschroeder/react-native-simple-animations/)
+[![devDependency status](https://david-dm.org/joeyschroeder/react-native-simple-animations/dev-status.svg)](https://david-dm.org/joeyschroeder/react-native-simple-animations/?type=dev)
 
 # [![react-native-simple-animations](https://i.imgur.com/Aw0bShe.png)](https://www.npmjs.com/package/react-native-simple-animations) React Native Simple Animations
 A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component. **Works on iOS & Android.**
@@ -22,16 +26,11 @@ import { SimpleAnimation } from 'react-native-simple-animations';
 Use as follows:
 
 ```
-<SimpleAnimation
-    delay={500}
-    duration={1000}
-    fade
-    staticType='zoom'
->
+<SimpleAnimation delay={500} duration={1000} fade staticType='zoom'>
 	<Text>Hello, world!</Text>
 </SimpleAnimation>
 ```
-In the above example the `Text` component will fade and zoom in for 1000 milliseconds are waiting 500 milliseconds.
+In the above example the `Text` component will fade and zoom in for 1000 milliseconds after waiting 500 milliseconds.
 
 ## Configuration
 You can configure `SimpleAnimation` by passing the following props:
@@ -40,7 +39,7 @@ You can configure `SimpleAnimation` by passing the following props:
 | - | - | - | - |
 | aim | `"in"`, `"out"` | `"in"` | whether the child component will animate **in** or **out**; for example, if `staticType` is set to `"zoom"` and `aim` is set to `"in"` the child component will zoom in; if `aim` is set to `"out"` the child component will zoom out |
 | animate | boolean | `true` | when `true` the child component will animate, when `false` the child component will not animate |
-| animateOnUpdate | boolean | `true` | when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change |
+| animateOnUpdate | boolean | `false` | when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change |
 | delay | number | `0` | the length in milliseconds the component will wait before animating |
 | direction | `"down"`, `"left"`, `"right"`, `"up"` | `null` | when `movementType` is set, this is the direction the child component will move |
 | distance | number | `0` | when `movementType` is set, this is the distance the child component will move |
@@ -57,13 +56,12 @@ You can configure `SimpleAnimation` by passing the following props:
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `SimpleAnimation` component in use.  The demo application was built using [Expo](https://expo.io/features).
 
-To use the demo application install Expo using the installation instructions located [here](https://docs.expo.io/versions/v28.0.0/introduction/installation), clone this repository, run the application using the [Expo XDE](https://expo.io/tools).  Then open the application on the iOS Simulator, [Gennymotion Android Emulator](https://www.genymotion.com/), or your mobile device.
+To use the demo application install Expo using the installation instructions located [here](https://docs.expo.io/versions/v31.0.0/introduction/installation), clone this repository, run the application using the [expo-cli](https://docs.expo.io/versions/latest/workflow/expo-cli).  Then open the application on the iOS Simulator, [Gennymotion Android Emulator](https://www.genymotion.com/), or your mobile device.
 
-1) Install [Expo XDE](https://docs.expo.io/versions/v28.0.0/introduction/installation)
-2) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
-3) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
-4) Install demo application dependencies: `npm install`
-5) Run `npm run start`
+1) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
+2) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
+3) Install demo application dependencies: `npm install`
+4) Run `npm run start`
 
 Using the Expo CLI, you'll be able to view the demo application in the iOS Simulator or Gennymotion Android Android Emulator, or on your mobile device using the [iOS Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779) or [Android Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US).
 
