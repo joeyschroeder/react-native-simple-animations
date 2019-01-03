@@ -4,6 +4,8 @@
   "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
   "scripts": {
+    "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
+    "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
