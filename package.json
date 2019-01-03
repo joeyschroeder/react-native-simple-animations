@@ -41,24 +41,29 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",
-    "babel-preset-react-native": "^4.0.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.19.1",
-    "eslint-plugin-jest": "^21.17.0",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-react-native": "^3.2.1",
-    "jest": "^23.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-react-native": "^4.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.11.1",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react-native": "^3.5.0",
+    "jest": "^23.6.0",
     "jest-react-native": "^18.0.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-native": "^0.55.4",
-    "react-test-renderer": "^16.4.1"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-native": "^0.57.8",
+    "react-test-renderer": "^16.7.0"
   },
   "jest": {
-    "collectCoverageFrom": [ "src/**/*.js" ],
-    "coverageReporters": [ "lcov", "text" ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
     "preset": "react-native",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/"
