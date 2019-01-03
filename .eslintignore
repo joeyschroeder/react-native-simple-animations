@@ -1,0 +1,5 @@
+./__tests__/
+./coverage/
+./lib/
+./node_modules/
+./npm-debug.*
