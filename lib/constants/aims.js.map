@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/constants/aims.js"],"names":["AIMS","IN","OUT"],"mappings":"6EAAO,GAAMA,CAAAA,IAAI,CAAG,CAClBC,EAAE,CAAE,IADc,CAElBC,GAAG,CAAE,KAFa,CAAb,C","sourcesContent":["export const AIMS = {\n  IN: 'in',\n  OUT: 'out'\n};\n"],"file":"aims.js"}

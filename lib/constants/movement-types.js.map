@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/constants/movement-types.js"],"names":["MOVEMENT_TYPES","SLIDE","SPRING"],"mappings":"uFAAO,GAAMA,CAAAA,cAAc,CAAG,CAC5BC,KAAK,CAAE,OADqB,CAE5BC,MAAM,CAAE,QAFoB,CAAvB,C","sourcesContent":["export const MOVEMENT_TYPES = {\n  SLIDE: 'slide',\n  SPRING: 'spring'\n};\n"],"file":"movement-types.js"}

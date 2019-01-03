@@ -62,10 +62,10 @@ To use the demo application install Expo using the installation instructions loc
 1) Install [Expo XDE](https://docs.expo.io/versions/v28.0.0/introduction/installation)
 2) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
 3) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
-4) Install demo application dependencies: `npm i`
-5) Open `react-native-simple-animations-example-app` in **Expo XDE**
+4) Install demo application dependencies: `npm install`
+5) Run `npm run start`
 
-Using Expo XDE, you'll be able to view the demo application in the iOS Simulator or Gennymotion Android Android Emulator, or on your mobile device using the [iOS Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779) or [Android Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US).
+Using the Expo CLI, you'll be able to view the demo application in the iOS Simulator or Gennymotion Android Android Emulator, or on your mobile device using the [iOS Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779) or [Android Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US).
 
 ## Built With
 * [React Native](https://facebook.github.io/react-native/) - A framework for building native apps using React
