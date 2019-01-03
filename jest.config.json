@@ -19,6 +19,6 @@
     "<rootDir>/node_modules/"
   ],
   "transform": {
-    "^.+\\.js$": "babel-jest"
+    "\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
   }
 }
