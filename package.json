@@ -4,8 +4,13 @@
   "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib --env-name production --copy-files --source-maps && echo \"\\x1b[42m\\x1b[1m BABEL \\x1b[0m\" Library built",
+    "clean": "rm -rf lib/ && echo \"\\x1b[42m\\x1b[1m CLEAN \\x1b[0m\" Cleaned library folder",
+    "copy-package-json": "cp package.json lib/ && cp README.md lib/ && echo \"\\x1b[42m\\x1b[1m COPY \\x1b[0m\" Copied package.json to library",
     "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
+    "pre-publish": "npm run --silent eslint:fix && npm run --silent test && npm run --silent clean && npm run --silent build && npm run --silent copy-package-json",
+    "publish-package": "npm publish ./lib",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
@@ -43,6 +48,7 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/constants/static-types.js"],"names":["STATIC_TYPES","BOUNCE","ZOOM"],"mappings":"qFAAO,GAAMA,CAAAA,YAAY,CAAG,CAC1BC,MAAM,CAAE,QADkB,CAE1BC,IAAI,CAAE,MAFoB,CAArB,C","sourcesContent":["export const STATIC_TYPES = {\n  BOUNCE: 'bounce',\n  ZOOM: 'zoom'\n};\n"],"file":"static-types.js"}
