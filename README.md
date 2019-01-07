@@ -52,13 +52,12 @@ You can configure `SimpleAnimation` by passing the following props:
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `SimpleAnimation` component in use.  The demo application was built using [Expo](https://expo.io/features).
 
-To use the demo application install Expo using the installation instructions located [here](https://docs.expo.io/versions/v28.0.0/introduction/installation), clone this repository, run the application using the [Expo XDE](https://expo.io/tools).  Then open the application on the iOS Simulator, [Gennymotion Android Emulator](https://www.genymotion.com/), or your mobile device.
+To use the demo application install Expo using the installation instructions located [here](https://docs.expo.io/versions/v31.0.0/introduction/installation), clone this repository, run the application using the [expo-cli](https://docs.expo.io/versions/latest/workflow/expo-cli).  Then open the application on the iOS Simulator, [Gennymotion Android Emulator](https://www.genymotion.com/), or your mobile device.
 
-1) Install [Expo XDE](https://docs.expo.io/versions/v28.0.0/introduction/installation)
-2) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
-3) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
-4) Install demo application dependencies: `npm install`
-5) Run `npm run start`
+1) Clone this repository: `https://github.com/joeyschroeder/react-native-simple-animations.git`
+2) Navigate to the demo application: `cd path/to/this/repository/react-native-simple-animations/example/reactreact-native-simple-animations-example-app`
+3) Install demo application dependencies: `npm install`
+4) Run `npm run start`
 
 Using the Expo CLI, you'll be able to view the demo application in the iOS Simulator or Gennymotion Android Android Emulator, or on your mobile device using the [iOS Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779) or [Android Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US).
 
