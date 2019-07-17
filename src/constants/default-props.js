@@ -1,5 +1,5 @@
-import { AIMS } from './aims';
 import { Easing } from 'react-native';
+import { AIMS } from './aims';
 
 export const DEFAULT_PROPS = {
   aim: AIMS.IN,

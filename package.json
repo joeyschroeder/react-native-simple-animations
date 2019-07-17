@@ -73,5 +73,9 @@
     "react-dom": "^16.8.6",
     "react-native": "^0.60.3",
     "react-test-renderer": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": ">= 15 || >= 16",
+    "react-native": ">=0.39"
   }
 }

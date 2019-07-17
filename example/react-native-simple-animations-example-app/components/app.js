@@ -12,6 +12,9 @@ import { SliderSelector } from './slider-selector';
 import { Variables } from '../config/variables';
 
 const styles = StyleSheet.create({
+  option: {
+    marginBottom: Variables.spacer.base / 2
+  },
   root: {
     alignItems: 'center',
     backgroundColor: Variables.colors.primary,
@@ -20,9 +23,6 @@ const styles = StyleSheet.create({
     paddingBottom: Variables.spacer.base,
     paddingHorizontal: Variables.spacer.base / 2,
     paddingTop: Variables.spacer.base + Constants.statusBarHeight
-  },
-  option: {
-    marginBottom: Variables.spacer.base / 2
   }
 });
 

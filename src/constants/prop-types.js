@@ -1,9 +1,9 @@
+import PropTypes from 'prop-types';
+import { ViewPropTypes } from 'react-native';
 import { AIMS } from './aims';
 import { DIRECTIONS } from './directions';
 import { MOVEMENT_TYPES } from './movement-types';
-import PropTypes from 'prop-types';
 import { STATIC_TYPES } from './static-types';
-import { ViewPropTypes } from 'react-native';
 
 export const PROP_TYPES = {
   aim: PropTypes.oneOf(Object.values(AIMS)).isRequired,

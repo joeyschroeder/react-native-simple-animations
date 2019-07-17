@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Animated } from 'react-native';
 import { getSpringAnimation, getTimingAnimation } from './util/get-animation';
 
 import { AIMS } from './constants/aims';
-import { Animated } from 'react-native';
 import { DEFAULT_PROPS } from './constants/default-props';
 import { DIRECTIONS } from './constants/directions';
 import { MOVEMENT_TYPES } from './constants/movement-types';

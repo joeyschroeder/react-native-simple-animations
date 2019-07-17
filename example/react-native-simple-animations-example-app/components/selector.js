@@ -1,9 +1,9 @@
 import { StyleSheet, Text, TouchableWithoutFeedback, View, ViewPropTypes } from 'react-native';
-import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 import { Ionicons } from '@expo/vector-icons';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   root: {
@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     borderColor: Variables.colors.white,
     borderRadius: Variables.border.radius,
     borderWidth: Variables.border.width,
-    padding: Variables.spacer.base / 2,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    padding: Variables.spacer.base / 2
   },
   value: {
     flex: 1
