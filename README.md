@@ -3,6 +3,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-simple-animations.svg)](https://github.com/joeyschroeder/react-native-simple-animations/issues)
 [![npm downloads](https://img.shields.io/npm/dt/react-native-simple-animations.svg)](https://www.npmjs.com/package/react-native-simple-animations)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Dependency status](https://david-dm.org/joeyschroeder/react-native-simple-animations/status.svg)](https://david-dm.org/joeyschroeder/react-native-simple-animations/)
+[![devDependency status](https://david-dm.org/joeyschroeder/react-native-simple-animations/dev-status.svg)](https://david-dm.org/joeyschroeder/react-native-simple-animations/?type=dev)
 
 # [![react-native-simple-animations](https://i.imgur.com/Aw0bShe.png)](https://www.npmjs.com/package/react-native-simple-animations) React Native Simple Animations
 A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component. **Works on iOS & Android.**
@@ -36,7 +39,7 @@ You can configure `SimpleAnimation` by passing the following props:
 | - | - | - | - |
 | aim | `"in"`, `"out"` | `"in"` | whether the child component will animate **in** or **out**; for example, if `staticType` is set to `"zoom"` and `aim` is set to `"in"` the child component will zoom in; if `aim` is set to `"out"` the child component will zoom out |
 | animate | boolean | `true` | when `true` the child component will animate, when `false` the child component will not animate |
-| animateOnUpdate | boolean | `true` | when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change |
+| animateOnUpdate | boolean | `false` | when `true` the child component will animate if any of the props change on it's parent `SimpleAnimation` component, when `false` the child component will not animate regardless of `SimpleAnimation`'s props change |
 | delay | number | `0` | the length in milliseconds the component will wait before animating |
 | direction | `"down"`, `"left"`, `"right"`, `"up"` | `null` | when `movementType` is set, this is the direction the child component will move |
 | distance | number | `0` | when `movementType` is set, this is the distance the child component will move |

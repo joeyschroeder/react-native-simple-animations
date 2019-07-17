@@ -1,10 +1,10 @@
 import { DIRECTIONS, MOVEMENT_TYPES, SimpleAnimation } from 'react-native-simple-animations';
 import { Modal, Picker, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
 import React, { Component } from 'react';
-import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 import Color from 'color';
 import PropTypes from 'prop-types';
+import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   overlay: {
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     right: 0
   },
   text: {
-    fontFamily: Variables.fonts.sansSerif.regular,
     color: Variables.colors.blackType,
+    fontFamily: Variables.fonts.sansSerif.regular,
     fontSize: scaledValue(24),
     lineHeight: scaledLineHeight(24)
   }
@@ -55,6 +55,7 @@ export class PickerOverlay extends Component {
     const result = [];
 
     options.forEach((option, index) => {
+      // eslint-disable-next-line react/no-array-index-key
       result.push(<Picker.Item key={index} label={option} value={option} />);
     });
 

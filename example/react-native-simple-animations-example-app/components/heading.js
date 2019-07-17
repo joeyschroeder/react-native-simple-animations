@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
-
 import React from 'react';
+import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   root: {

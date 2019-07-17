@@ -1,18 +1,9 @@
 import { Animated, Easing, StyleSheet, Text, TouchableWithoutFeedback, View, ViewPropTypes } from 'react-native';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
-import PropTypes from 'prop-types';
-
 const styles = StyleSheet.create({
-  root: {
-    alignSelf: 'stretch',
-    borderRadius: Variables.border.radius,
-    borderWidth: Variables.border.width,
-    flexDirection: 'row',
-    overflow: 'hidden',
-    position: 'relative'
-  },
   activeIndicator: {
     alignSelf: 'stretch',
     bottom: 0,
@@ -29,6 +20,14 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingVertical: Variables.spacer.base / 4,
     zIndex: 1
+  },
+  root: {
+    alignSelf: 'stretch',
+    borderRadius: Variables.border.radius,
+    borderWidth: Variables.border.width,
+    flexDirection: 'row',
+    overflow: 'hidden',
+    position: 'relative'
   },
   text: {
     fontFamily: Variables.fonts.sansSerif.bold,

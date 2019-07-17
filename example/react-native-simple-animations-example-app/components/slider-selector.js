@@ -1,19 +1,20 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
 import { Slider, StyleSheet, Text, View, ViewPropTypes } from 'react-native';
-import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
-  root: {
-    alignSelf: 'stretch',
-    flexDirection: 'row'
-  },
   label: {
     alignItems: 'flex-start',
     justifyContent: 'center',
     paddingRight: Variables.spacer.base / 4
+  },
+  root: {
+    alignSelf: 'stretch',
+    flexDirection: 'row'
   },
   text: {
     fontFamily: Variables.fonts.sansSerif.bold,
@@ -91,9 +92,7 @@ export class SliderSelector extends Component {
           />
         </View>
         <View style={[styles.value, { flex: 2 }]}>
-          <Text style={[styles.text, styles.textLarge, { color: textColor }]}>
-            {displayValue ? displayValue : value}
-          </Text>
+          <Text style={[styles.text, styles.textLarge, { color: textColor }]}>{displayValue || value}</Text>
         </View>
       </View>
     );

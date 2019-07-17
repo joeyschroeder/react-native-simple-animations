@@ -1,14 +1,13 @@
 import { Linking, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
-import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
-
 import React from 'react';
+import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   name: {
     fontFamily: Variables.fonts.sansSerif.bold,
-    textDecorationStyle: 'solid',
     textDecorationColor: Variables.colors.white,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
+    textDecorationStyle: 'solid'
   },
   text: {
     color: Variables.colors.white,
