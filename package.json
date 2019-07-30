@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-animations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A React Native component that adds simple entrance, exit, and attention-seeking animations to a child component.",
   "main": "index.js",
   "scripts": {
