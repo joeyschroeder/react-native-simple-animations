@@ -17,5 +17,5 @@ export const DEFAULT_PROPS = {
   staticType: null,
   style: null,
   tension: 100,
-  useNativeDriver: true
+  useNativeDriver: true,
 };

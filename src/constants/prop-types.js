@@ -21,5 +21,5 @@ export const PROP_TYPES = {
   staticType: PropTypes.oneOf(Object.values(STATIC_TYPES)),
   style: ViewPropTypes.style,
   tension: PropTypes.number.isRequired,
-  useNativeDriver: PropTypes.bool.isRequired
+  useNativeDriver: PropTypes.bool.isRequired,
 };

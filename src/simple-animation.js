@@ -65,13 +65,13 @@ export class SimpleAnimation extends Component {
 
     const interpolatedAnimation = this.movementAnimation.interpolate({
       inputRange: [0, 1],
-      outputRange: [outputRangeStartValue, 0]
+      outputRange: [outputRangeStartValue, 0],
     });
 
     const transform = [
       direction === DIRECTIONS.LEFT || direction === DIRECTIONS.RIGHT
         ? { translateX: interpolatedAnimation }
-        : { translateY: interpolatedAnimation }
+        : { translateY: interpolatedAnimation },
     ];
 
     return transform;
