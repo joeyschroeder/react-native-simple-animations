@@ -1,9 +1,8 @@
-import Color from 'color';
 import Device from 'react-native-device-detection';
 
 export const { width, height, isAndroid } = Device;
 
-export const scaledValue = value => {
+export const scaledValue = (value) => {
   // areaConstant is arbitrarily based off of the
   // iPhone X (375 x 812); this value is used as
   // the 100% base for all other values to be
@@ -30,7 +29,7 @@ export const scaledValue = value => {
   return Math.round(result);
 };
 
-export const scaledLineHeight = value => {
+export const scaledLineHeight = (value) => {
   // this is used to adjust the line height of
   // "Gotham Rounded" font because it's not
   // quite centered vertically when line-height
@@ -42,17 +41,17 @@ export const scaledLineHeight = value => {
 export const Variables = {
   border: {
     radius: scaledValue(4),
-    width: scaledValue(1)
+    width: scaledValue(1),
   },
   colors: {
-    black: Color('#000'),
-    blackType: Color('#333132'),
-    primary: Color('#ff0054'),
-    white: Color('#fff')
+    black: '#000',
+    blackType: '#333132',
+    primary: '#ff0054',
+    white: '#fff',
   },
   device: {
     height,
-    width
+    width,
   },
   fonts: {
     sansSerif: {
@@ -60,10 +59,10 @@ export const Variables = {
       bold: 'roboto-bold',
       light: 'roboto-light',
       regular: 'roboto-regular',
-      thin: 'roboto-thin'
-    }
+      thin: 'roboto-thin',
+    },
   },
   spacer: {
-    base: scaledValue(33)
-  }
+    base: scaledValue(33),
+  },
 };

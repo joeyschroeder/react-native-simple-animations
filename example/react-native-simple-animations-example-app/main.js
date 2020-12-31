@@ -1,12 +1,14 @@
 /* eslint-disable global-require */
-import { AppLoading, Font, registerRootComponent } from 'expo';
+import { registerRootComponent } from 'expo';
+import AppLoading from 'expo-app-loading';
 import React, { Component } from 'react';
+import * as Font from 'expo-font';
 
 import { App } from './components/app';
 
 export class AppContainer extends Component {
   static cacheFonts(fonts) {
-    return fonts.map(font => Font.loadAsync(font));
+    return fonts.map((font) => Font.loadAsync(font));
   }
 
   static loadAssetsAsync() {
@@ -22,13 +24,16 @@ export class AppContainer extends Component {
       { 'roboto-medium-italic': require('./assets/fonts/roboto/Roboto-MediumItalic.ttf') },
       { 'roboto-regular': require('./assets/fonts/roboto/Roboto-Regular.ttf') },
       { 'roboto-thin': require('./assets/fonts/roboto/Roboto-Thin.ttf') },
-      { 'roboto-thin-italic': require('./assets/fonts/roboto/Roboto-ThinItalic.ttf') }
+      { 'roboto-thin-italic': require('./assets/fonts/roboto/Roboto-ThinItalic.ttf') },
     ]);
 
     return Promise.all([...fontAssets]);
   }
 
-  state = { appReady: false };
+  constructor(props) {
+    super(props);
+    this.state = { appReady: false };
+  }
 
   componentDidMount() {
     AppContainer.loadAssetsAsync().then(() => this.setState({ appReady: true }));

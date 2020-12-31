@@ -12,14 +12,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 0,
     top: 0,
-    zIndex: 0
+    zIndex: 0,
   },
   button: {
     backgroundColor: 'transparent',
     flexBasis: 0,
     flexGrow: 1,
     paddingVertical: Variables.spacer.base / 4,
-    zIndex: 1
+    zIndex: 1,
   },
   root: {
     alignSelf: 'stretch',
@@ -27,24 +27,24 @@ const styles = StyleSheet.create({
     borderWidth: Variables.border.width,
     flexDirection: 'row',
     overflow: 'hidden',
-    position: 'relative'
+    position: 'relative',
   },
   text: {
     fontFamily: Variables.fonts.sansSerif.bold,
     fontSize: scaledValue(18),
     lineHeight: scaledLineHeight(18),
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
 
 export class RadioSelector extends Component {
   static propTypes = {
-    activeColor: PropTypes.object,
+    activeColor: PropTypes.string,
     onToggle: PropTypes.func,
     options: PropTypes.arrayOf(PropTypes.string),
     style: ViewPropTypes.style,
-    textColor: PropTypes.object,
-    value: PropTypes.string
+    textColor: PropTypes.string,
+    value: PropTypes.string,
   };
 
   static defaultProps = {
@@ -53,7 +53,7 @@ export class RadioSelector extends Component {
     options: [],
     style: null,
     textColor: Variables.colors.primary,
-    value: ''
+    value: '',
   };
 
   constructor(props) {
@@ -73,7 +73,8 @@ export class RadioSelector extends Component {
     Animated.timing(this.animation, {
       duration: 500,
       easing: Easing.out(Easing.exp),
-      toValue: options.indexOf(value)
+      toValue: options.indexOf(value),
+      useNativeDriver: false,
     }).start();
   }
 
@@ -81,7 +82,7 @@ export class RadioSelector extends Component {
     const { textColor, activeColor, value, options, onToggle } = this.props;
     const result = [];
 
-    options.forEach(option => {
+    options.forEach((option) => {
       const color = value === option ? textColor : activeColor;
       const textStyles = [styles.text, { color }];
 
@@ -107,12 +108,12 @@ export class RadioSelector extends Component {
 
     const spacerAfterFlex = this.animation.interpolate({
       inputRange: [0, options.length - 1],
-      outputRange: [interpolatedRange, 0]
+      outputRange: [interpolatedRange, 0],
     });
 
     const spacerBeforeFlex = this.animation.interpolate({
       inputRange: [0, options.length - 1],
-      outputRange: [0, interpolatedRange]
+      outputRange: [0, interpolatedRange],
     });
 
     const spacerBeforeStyles = { flex: spacerBeforeFlex };

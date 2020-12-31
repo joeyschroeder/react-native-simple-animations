@@ -4,7 +4,7 @@ import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   root: {
-    marginBottom: Variables.spacer.base
+    marginBottom: Variables.spacer.base,
   },
   subTitle: {
     color: Variables.colors.white,
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     letterSpacing: scaledValue(10),
     lineHeight: scaledLineHeight(14),
     marginBottom: Variables.spacer.base / 2,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   title: {
     color: Variables.colors.white,
@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     fontSize: scaledValue(56),
     letterSpacing: scaledValue(-2),
     lineHeight: scaledLineHeight(56),
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
 
 export const Heading = () => {

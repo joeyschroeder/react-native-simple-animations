@@ -2,7 +2,7 @@ import { AIMS, DIRECTIONS, MOVEMENT_TYPES, STATIC_TYPES, SimpleAnimation } from 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { Constants } from 'expo';
+import Constants from 'expo-constants';
 import { Credits } from './credits';
 import { Heading } from './heading';
 import { PickerOverlay } from './picker-overlay';
@@ -13,7 +13,7 @@ import { Variables } from '../config/variables';
 
 const styles = StyleSheet.create({
   option: {
-    marginBottom: Variables.spacer.base / 2
+    marginBottom: Variables.spacer.base / 2,
   },
   root: {
     alignItems: 'center',
@@ -22,24 +22,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingBottom: Variables.spacer.base,
     paddingHorizontal: Variables.spacer.base / 2,
-    paddingTop: Variables.spacer.base + Constants.statusBarHeight
-  }
+    paddingTop: Variables.spacer.base + Constants.statusBarHeight,
+  },
 });
 
 export class App extends Component {
-  state = {
-    aim: AIMS.IN,
-    delay: 500,
-    direction: null,
-    directionPickerActive: false,
-    distance: 500,
-    duration: 3000,
-    friction: 5,
-    movementType: null,
-    movementTypePickerActive: false,
-    staticType: STATIC_TYPES.BOUNCE,
-    staticTypePickerActive: false
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      aim: AIMS.IN,
+      delay: 500,
+      direction: null,
+      directionPickerActive: false,
+      distance: 500,
+      duration: 3000,
+      friction: 5,
+      movementType: null,
+      movementTypePickerActive: false,
+      staticType: STATIC_TYPES.BOUNCE,
+      staticTypePickerActive: false,
+    };
+  }
 
   setValueToState = (key, value) => {
     this.setState({ [key]: value });
@@ -57,26 +61,26 @@ export class App extends Component {
       movementType,
       movementTypePickerActive,
       staticType,
-      staticTypePickerActive
+      staticTypePickerActive,
     } = this.state;
 
     const animateOnUpdate = !staticTypePickerActive && !directionPickerActive && !movementTypePickerActive;
 
-    const onAimToggle = value => this.setValueToState('aim', value);
+    const onAimToggle = (value) => this.setValueToState('aim', value);
 
     const onMovementTypePickerToggle = () =>
       this.setValueToState('movementTypePickerActive', !movementTypePickerActive);
-    const onMovementTypeToggle = value => this.setValueToState('movementType', value);
+    const onMovementTypeToggle = (value) => this.setValueToState('movementType', value);
 
     const onDirectionPickerToggle = () => this.setValueToState('directionPickerActive', !directionPickerActive);
-    const onDirectionToggle = value => this.setValueToState('direction', value);
+    const onDirectionToggle = (value) => this.setValueToState('direction', value);
 
     const onStaticTypePickerToggle = () => this.setValueToState('staticTypePickerActive', !staticTypePickerActive);
-    const onStaticTypeToggle = value => this.setValueToState('staticType', value);
+    const onStaticTypeToggle = (value) => this.setValueToState('staticType', value);
 
-    const onDistanceChange = value => this.setValueToState('distance', value);
-    const onDurationChange = value => this.setValueToState('duration', value);
-    const onFrictionChange = value => this.setValueToState('friction', value);
+    const onDistanceChange = (value) => this.setValueToState('distance', value);
+    const onDurationChange = (value) => this.setValueToState('duration', value);
+    const onFrictionChange = (value) => this.setValueToState('friction', value);
 
     const staticTypes = Object.values(STATIC_TYPES);
     const directionOptions = Object.values(DIRECTIONS);

@@ -1,5 +1,6 @@
 import { DIRECTIONS, MOVEMENT_TYPES, SimpleAnimation } from 'react-native-simple-animations';
-import { Modal, Picker, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
+import { Modal, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import React, { Component } from 'react';
 
 import Color from 'color';
@@ -8,27 +9,27 @@ import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
 
 const styles = StyleSheet.create({
   overlay: {
-    backgroundColor: Color(Variables.colors.black).fade(0.7),
+    backgroundColor: Color(Variables.colors.black).fade(0.7).rgb().string(),
     bottom: 0,
     flex: 1,
     left: 0,
     position: 'absolute',
     right: 0,
-    top: 0
+    top: 0,
   },
   picker: {
     backgroundColor: Variables.colors.white,
     bottom: 0,
     left: 0,
     position: 'absolute',
-    right: 0
+    right: 0,
   },
   text: {
     color: Variables.colors.blackType,
     fontFamily: Variables.fonts.sansSerif.regular,
     fontSize: scaledValue(24),
-    lineHeight: scaledLineHeight(24)
-  }
+    lineHeight: scaledLineHeight(24),
+  },
 });
 
 export class PickerOverlay extends Component {
@@ -38,7 +39,7 @@ export class PickerOverlay extends Component {
     onClose: PropTypes.func,
     options: PropTypes.arrayOf(PropTypes.string),
     placeholderText: PropTypes.string,
-    selectedValue: PropTypes.string
+    selectedValue: PropTypes.string,
   };
 
   static defaultProps = {
@@ -47,7 +48,7 @@ export class PickerOverlay extends Component {
     onClose: null,
     options: [],
     placeholderText: 'none',
-    selectedValue: ''
+    selectedValue: '',
   };
 
   getPickerItems() {

@@ -7,15 +7,15 @@ const styles = StyleSheet.create({
     fontFamily: Variables.fonts.sansSerif.bold,
     textDecorationColor: Variables.colors.white,
     textDecorationLine: 'underline',
-    textDecorationStyle: 'solid'
+    textDecorationStyle: 'solid',
   },
   text: {
     color: Variables.colors.white,
     fontFamily: Variables.fonts.sansSerif.regular,
     fontSize: scaledValue(16),
     lineHeight: scaledLineHeight(16),
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
 
 export const Credits = () => {
