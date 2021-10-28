@@ -1,3 +1,13 @@
+### 0.3.0 (2021-10-28)
+
+##### Chores
+
+*  Update package dependencies ([9903cea6](https://github.com/joeyschroeder/react-native-simple-animations/commit/9903cea697bc5affd2bcd787bd960ad1c520b549))
+
+##### New Features
+
+*  Add all {...other} props to Animated.View ([e67898d9](https://github.com/joeyschroeder/react-native-simple-animations/commit/e67898d92155d8a63edc9e588634e200fac95d59))
+
 #### 0.2.3 (2020-12-31)
 
 ##### Chores
