@@ -4,6 +4,9 @@ import { shallow } from 'enzyme';
 import { Text } from 'react-native';
 import { SimpleAnimation } from '../src/simple-animation';
 
+jest.useFakeTimers();
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+
 describe('<SimpleAnimation />', () => {
   it('should call this.animate() when this.componentDidMount() is called', () => {
     const component = shallow(<SimpleAnimation />);
