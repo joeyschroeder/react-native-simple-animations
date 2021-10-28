@@ -121,12 +121,35 @@ export class SimpleAnimation extends Component {
   }
 
   render() {
-    const { children, style } = this.props;
+    const {
+      aim,
+      animate,
+      animateOnUpdate,
+      children,
+      delay,
+      direction,
+      distance,
+      duration,
+      easing,
+      fade,
+      friction,
+      movementType,
+      staticType,
+      style,
+      tension,
+      useNativeDriver,
+      ...other
+    } = this.props;
 
     if (!children) return null;
 
     const viewStyles = [style, this.getTransform(), this.getOpacity()];
 
-    return <Animated.View style={viewStyles}>{children}</Animated.View>;
+    return (
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      <Animated.View {...other} style={viewStyles}>
+        {children}
+      </Animated.View>
+    );
   }
 }
