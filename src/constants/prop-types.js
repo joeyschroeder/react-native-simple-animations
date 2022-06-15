@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { ViewPropTypes } from 'react-native';
 import { AIMS } from './aims';
 import { DIRECTIONS } from './directions';
 import { MOVEMENT_TYPES } from './movement-types';
@@ -19,7 +18,7 @@ export const PROP_TYPES = {
   friction: PropTypes.number.isRequired,
   movementType: PropTypes.oneOf(Object.values(MOVEMENT_TYPES)),
   staticType: PropTypes.oneOf(Object.values(STATIC_TYPES)),
-  style: ViewPropTypes.style,
+  style: PropTypes.object,
   tension: PropTypes.number.isRequired,
   useNativeDriver: PropTypes.bool.isRequired,
 };

@@ -1,6 +1,5 @@
-/* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ViewPropTypes } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Slider from '@react-native-community/slider';
 
 import PropTypes from 'prop-types';
@@ -43,7 +42,7 @@ export class SliderSelector extends Component {
     label: PropTypes.string,
     onChange: PropTypes.func,
     step: PropTypes.number,
-    style: ViewPropTypes.style,
+    style: PropTypes.object,
     textColor: PropTypes.string,
     value: PropTypes.number,
     maxValue: PropTypes.number,
@@ -57,7 +56,7 @@ export class SliderSelector extends Component {
     label: '',
     onChange: () => {},
     step: 1,
-    style: null,
+    style: undefined,
     textColor: Variables.colors.white,
     value: 50,
     maxValue: 100,

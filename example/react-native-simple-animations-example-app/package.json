@@ -2,25 +2,25 @@
   "main": "main.js",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/expo-cli start"
+    "start": "./node_modules/.bin/expo start"
   },
   "dependencies": {
-    "@expo/vector-icons": "^12.0.0",
-    "@react-native-picker/picker": "1.9.2",
-    "color": "^3.1.0",
-    "expo": "^40.0.0",
-    "expo-app-loading": "^1.0.1",
-    "lodash": "^4.17.14",
-    "prop-types": "^15.7.2",
-    "react": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-device-detection": "^0.2.0",
-    "react-native-simple-animations": "^0.2.1",
-    "@react-native-community/slider": "3.0.3",
-    "expo-constants": "~9.3.3",
-    "expo-font": "~8.4.0"
+    "@expo/vector-icons": "^13.0.0",
+    "@react-native-picker/picker": "2.4.1",
+    "color": "^4.2.3",
+    "expo": "^45.0.5",
+    "expo-app-loading": "~2.0.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-native-device-detection": "^0.2.1",
+    "react-native-simple-animations": "^0.3.0",
+    "@react-native-community/slider": "4.2.2",
+    "expo-constants": "~13.1.1",
+    "expo-font": "~10.1.0",
+    "react-native": "0.68.2"
   },
   "devDependencies": {
-    "expo-cli": "^2.6.14"
+    "expo-cli": "^5.4.9"
   }
 }

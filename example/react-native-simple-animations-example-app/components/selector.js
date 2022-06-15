@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableWithoutFeedback, View, ViewPropTypes } from 'react-native';
+import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 import PropTypes from 'prop-types';
@@ -50,13 +50,13 @@ export const Selector = (props) => {
 Selector.propTypes = {
   onPress: PropTypes.func,
   placeholderText: PropTypes.string,
-  style: ViewPropTypes.style,
+  style: PropTypes.object,
   value: PropTypes.string,
 };
 
 Selector.defaultProps = {
   onPress: null,
   placeholderText: 'Select a value...',
-  style: null,
+  style: undefined,
   value: 'Value',
 };

@@ -1,4 +1,4 @@
-import { Animated, Easing, StyleSheet, Text, TouchableWithoutFeedback, View, ViewPropTypes } from 'react-native';
+import { Animated, Easing, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Variables, scaledLineHeight, scaledValue } from '../config/variables';
@@ -42,7 +42,7 @@ export class RadioSelector extends Component {
     activeColor: PropTypes.string,
     onToggle: PropTypes.func,
     options: PropTypes.arrayOf(PropTypes.string),
-    style: ViewPropTypes.style,
+    style: PropTypes.object,
     textColor: PropTypes.string,
     value: PropTypes.string,
   };
@@ -51,7 +51,7 @@ export class RadioSelector extends Component {
     activeColor: Variables.colors.white,
     onToggle: () => {},
     options: [],
-    style: null,
+    style: undefined,
     textColor: Variables.colors.primary,
     value: '',
   };

@@ -1,23 +1,10 @@
-
 {
-  "collectCoverageFrom": [
-    "src/**/*.js"
-  ],
-  "coverageReporters": [
-    "lcov",
-    "text"
-  ],
+  "collectCoverageFrom": ["src/**/*.js"],
+  "coverageReporters": ["lcov", "text"],
   "preset": "react-native",
-  "modulePathIgnorePatterns": [
-    "<rootDir>/example/"
-  ],
-  "setupFiles": [
-    "./test-setup.js"
-  ],
-  "testPathIgnorePatterns": [
-    "<rootDir>/example/",
-    "<rootDir>/node_modules/"
-  ],
+  "modulePathIgnorePatterns": ["<rootDir>/example/"],
+  "setupFiles": ["./test-setup.js"],
+  "testPathIgnorePatterns": ["<rootDir>/example/", "<rootDir>/node_modules/"],
   "transform": {
     "\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
   }
