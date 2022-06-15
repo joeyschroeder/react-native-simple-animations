@@ -1,3 +1,9 @@
+#### 0.3.1 (2022-06-15)
+
+##### Chores
+
+*  Update package dependencies ([b1f7f595](https://github.com/joeyschroeder/react-native-simple-animations/commit/b1f7f595158c7134fc600d95ee2cb9d8b7ef930a))
+
 ### 0.3.0 (2021-10-28)
 
 ##### Chores
